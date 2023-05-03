@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Hero } from '../components/hero.component'
-import { FeaturedProducts } from '@/components/featured-products.component'
+import  FeaturedProducts from '@/components/featured-products.component'
 
 export default function Home() {
   return (
