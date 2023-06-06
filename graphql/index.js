@@ -1,6 +1,4 @@
 
-import { getCollectionProductsQuery } from "./queries/collection";
-
 
 const key = process.env.SHOPIFY_STOREFRONT_ACCESS_TOKEN || '410b4d143dd5f61a5ba6efe82100b95e'
 const domain = process.env.SHOPIFY_STORE_DOMAIN || 'https://jeffrey-nextjs-dev.myshopify.com'

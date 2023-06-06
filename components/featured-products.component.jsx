@@ -7,6 +7,8 @@ function FeaturedProducts() {
       return <p>loading...</p>
   }
 
+  console.log(process.env.REACT_APP_SHOPIFY_STOREFRONT_ACCESS_TOKEN, process.env.SHOPIFY_STORE_DOMAIN)
+
   return (
     <section
       className="lg:grid lg:grid-cols-6 lg:grid-rows-2"
