@@ -1,25 +1,8 @@
 import { ProductCard } from "./product-card.component";
-import { getCollectionProducts } from "../graphql/index";
 import { useState, useEffect } from 'react';
 
 function FeaturedProducts() {
-
-    const [products, setProducts] = useState(null);
-
-    useEffect(() => {
-        const fetchProducts = async () => {
-            const res = await getCollectionProducts(
-                "hidden-homepage-featured-items"
-              );
-              console.log('featured products data',res)
-              setProducts(res);
-        };
-    
-        fetchProducts();
-      }, []);
-
-  // Collections that start with `hidden-*` are hidden from the search page.
-
+  const products = [0,1,2]
   if(!products){
       return <p>loading...</p>
   }
