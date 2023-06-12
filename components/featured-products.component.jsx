@@ -11,7 +11,7 @@ function FeaturedProducts() {
 
   return (
     <section
-      className="lg:grid lg:grid-cols-6 lg:grid-rows-2"
+      className="lg:grid lg:grid-cols-3 px-6 py-8"
       data-testid="homepage-products"
     >
       { products.map((product) => <ProductCard key={product.id} product={product} />) }
